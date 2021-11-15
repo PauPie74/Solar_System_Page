@@ -127,17 +127,29 @@ body{
 #earth{
   width: 17px;
   height: 17px;
-  background: blue;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Whole_world_-_land_and_oceans_12000.jpg/1200px-Whole_world_-_land_and_oceans_12000.jpg");
-  background-size: 34px;
+  background-size: 47px;
   animation: orbit_e 25s linear infinite;
 }
 
-@keyframes orbit_e{
-  0%{
-    transform:rotate(0deg)
-              translate(-91px)
-              rotate(0deg);
+#globe{
+    background-image: url("https://imgur.com/lH1H1ze.jpg");
+    background-size: 52px;
+    height: 100%;
+    z-index: -1;
+    animation: rotating_globe 10s linear infinite, day 25s linear infinite;
+}
+
+@keyframes rotating_globe{
+  0% {
+     background-position: left;
+}
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes day{
+    0% {
     box-shadow: inset 10px 0px 5px 0px rgba(0,0,0,0.8);
     }
   25% {
@@ -149,8 +161,18 @@ body{
   75.00000000001% {
     box-shadow: inset 20px 0px 5px 0px rgba(0,0,0,0.8);
   }
-  100%{
+  100% {
     box-shadow: inset 10px 0px 5px 0px rgba(0,0,0,0.8);
+  }
+}
+
+@keyframes orbit_e{
+  0%{
+    transform:rotate(0deg)
+              translate(-91px)
+              rotate(0deg);
+    }
+  100%{
     transform:rotate(360deg)
               translate(-91px)
               rotate(-360deg);
