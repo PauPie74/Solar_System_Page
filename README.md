@@ -2,7 +2,7 @@
 
 > Link: https://paupie74.github.io/Solar_System_Page/
 
-A website with animated Solar System.
+A website with an animated Solar System.
 
 * Pure CSS + HTML, no javascript
 * 8 planets + Sun, surface of each created with gradient or image
