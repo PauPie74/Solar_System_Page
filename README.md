@@ -1,6 +1,6 @@
 # Solar_System_Page
 
-> Link: https://paupie74.github.io/Solar_System_Page/
+> Link: [https://paupie74.github.io/Solar_System_Page/](https://paupie74.github.io/Solar_System_Page/)
 
 A website with an animated Solar System.
 
